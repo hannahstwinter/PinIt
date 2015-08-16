@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "PagePin",
+  "description": "Page too long to read in one go? Put a pin in it.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/pin_icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "<all_urls>"
+  ],
+
+  "content_scripts": [ {
+    "js": [ "jquery-1.11.2.min.js", "popup.js" ],
+    "css": ["application.css"],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
