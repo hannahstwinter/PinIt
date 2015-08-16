@@ -1,0 +1,92 @@
+body {
+  min-width: 357px;
+  overflow-x: hidden;
+  color: #33485c;
+}
+
+#header {
+  margin: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #33485c;
+}
+
+a {
+  color: #2980b9;
+}
+
+a:hover {
+  color: #3498db;
+}
+
+#pin-angle-left {
+  height: 15px;
+  padding-left: 10px;
+  margin-top: 2px;
+  position: absolute;
+}
+
+#content {
+  margin: 15px;
+}
+
+#footer {
+  margin: 15px;
+}
+
+.with-note-text {
+  padding-left: 3px;
+}
+
+.pin-container {
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+.color-pin {
+  height: 62px;
+  width: 62px;
+  padding-top: 20px;
+}
+
+.plus-icon {
+  margin-left: -18px;
+}
+
+.show-plus {
+  opacity: 0.8;
+}
+
+#current-page-pins-list {
+  display: none;
+  left: 0;
+  top: 0;
+}
+
+#all-pages-pins-list {
+  display: none;
+  left: 0;
+  top: 0;
+}
+
+/*
+.color-pin:hover {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 300ms;
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 300ms;
+  -moz-animation-iteration-count: once;
+  -moz-animation-timing-function: ease-out;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 300ms;
+  -ms-animation-iteration-count: once;
+  -ms-animation-timing-function: ease-out;
+  -o-transition: rotate(5deg);
+}
+
+@-webkit-keyframes spin {
+  0%  {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(5deg);}
+}*/
