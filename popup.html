@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Page too long to read in one go? Put a pin in it.</title>
+    <link rel="stylesheet" href="application.css"/>
+    <style>
+
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="popup.js"></script>
+    <script src="jquery-1.11.2.min.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <span>Put a pin in it.</span>
+      <img src="images/pin_icon_angle_left.png" id="pin-angle-left">
+      <hr></hr>
+    </div>
+    <div id="content">
+      <div id="jump-to-pin" data-bind="visible: pageHasPin()">
+        <a id="jump" href="#jump">Jump to the pin on this page</a>
+      </div>
+      <div id="color-pins-to-select"></div>
+      <div id="with-note-container">
+        <input type="checkbox" id="with-note-checkbox">
+          <label class="with-note-text" for="with-note-checkbox">
+            Pin it with a note?
+          </label>
+        </input>
+      </div>
+      <hr></hr>
+      <div id="pin-list">
+        <a id="list-current-page-pins" href="#current">List pin on current page</a> or <a id="list-all-pins" href="#all">List all pins on all pages</a>
+        <div id="current-page-pins-list">
+          <ul>
+            <li>a placeholder pin from this page</li>
+          </ul>
+        </div>
+        <div id="all-pages-pins-list">
+          <ul>
+            <li>a placeholder pin from this page</li>
+            <li>a placeholder pin from another page</li>
+            <li>another placeholder pin from another page</li>
+          </ul>
+        </div>
+      </div>
+      <hr></hr>
+    </div>
+    <div id="footer">
+      <a href="http://www.hannahwinter.com" target="_blank">About the Creator</a>
+    </div>
+  </body>
+</html>
